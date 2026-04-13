@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Yi King Oracle | Aleister Crowley</title>
+    <meta name="description" content="Digital Oracle based on Liber CCXVI - The Yi King by Aleister Crowley. Consult the 64 hexagrams with the moving line method.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+  <script type="module" crossorigin src="/assets/index-1oQA8_Zf.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BEdoz7GX.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1 class="glow-text">The Yi King</h1>
+            <p class="subtitle">Liber CCXVI</p>
+        </header>
+
+        <main id="main-content">
+            <!-- Initial State -->
+            <section id="state-idle" class="view active">
+                <div class="oracle-sphere">
+                    <div class="inner-glow"></div>
+                    <div class="decor-ring"></div>
+                </div>
+                <p class="intro-text">
+                    "The Yi King is mathematical and philosophical in form. Its structure is cognate with that of the Qabalah."
+                </p>
+                <button id="btn-toss" class="primary-btn">Consult the Oracle</button>
+            </section>
+
+            <!-- Tossing State -->
+            <section id="state-tossing" class="view">
+                <div class="coins-container">
+                    <div class="coin" id="coin-1"><div class="coin-inner"><div class="coin-front"></div><div class="coin-back"></div></div></div>
+                    <div class="coin" id="coin-2"><div class="coin-inner"><div class="coin-front"></div><div class="coin-back"></div></div></div>
+                    <div class="coin" id="coin-3"><div class="coin-inner"><div class="coin-front"></div><div class="coin-back"></div></div></div>
+                    <div class="coin" id="coin-4"><div class="coin-inner"><div class="coin-front"></div><div class="coin-back"></div></div></div>
+                    <div class="coin" id="coin-5"><div class="coin-inner"><div class="coin-front"></div><div class="coin-back"></div></div></div>
+                    <div class="coin" id="coin-6"><div class="coin-inner"><div class="coin-front"></div><div class="coin-back"></div></div></div>
+                </div>
+                <p class="status-text">Tossing the coins...</p>
+            </section>
+
+            <!-- Result State -->
+            <section id="state-result" class="view">
+                <div class="result-layout">
+                    <div class="hexagram-container" id="hexagram-visual">
+                        <!-- Lines will be injected here (bottom to top) -->
+                    </div>
+                    
+                    <div class="result-details">
+                        <h2 id="hex-name">HEXAGRAM NAME</h2>
+                        <div class="hex-meta">
+                            <span id="hex-number">#0</span> | <span id="hex-comp">Nature</span>
+                        </div>
+                        
+                        <div class="description-box">
+                            <p id="hex-desc-1"></p>
+                            <p id="hex-desc-2"></p>
+                        </div>
+
+                        <div class="oracle-answer">
+                            <h3>The Tao's Answer</h3>
+                            <p id="moving-line-poem" class="poem-line"></p>
+                        </div>
+
+                        <button id="btn-reset" class="secondary-btn">Consult Again</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>ΑΒΡΑΗΑΔΑΒΡΑ</p>
+        </footer>
+    </div>
+
+    <!-- Background Decoration -->
+    <div class="bg-stars"></div>
+    <div class="bg-gradient"></div>
+
+</body>
+</html>
