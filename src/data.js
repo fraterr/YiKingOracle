@@ -21,7 +21,8 @@ export const hexagrams = [
       "Be active, watchful, using care and tact.",
       "The dragon leaps; a bursting cataract.",
       "The dragon ploughs the sky with pace exact.",
-      "Exceed not, dragon; Lest thy force react."
+      "Exceed not, dragon; Lest thy force react.",
+      "(If all this heavenly hosts of dragons lacked their heads, good fortune would become a fact.)"
     ]
   },
   {
@@ -48,7 +49,8 @@ export const hexagrams = [
       "Maintain, but boast not virtue's majesty.",
       "Here is a sack made safe by skillful tie.",
       "Behold the yellow skirt; ill fortune fly.",
-      "Dragons at war: Gold, blood and porphyry."
+      "Dragons at war: Gold, blood and porphyry.",
+      "(Correct and firm the conduct, thou shalt spy good fortune from the sky.)"
     ]
   },
   {

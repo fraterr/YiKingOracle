@@ -82,10 +82,16 @@ function updateResultUI(result) {
   hexDesc1.textContent = hexagram.description[0] || '';
   hexDesc2.textContent = hexagram.description[1] || '';
   
-  // The specific poem line for the moving line
-  // Note: Crowley's poems correspond 1:1 with lines 1-6
-  const specificPoemLine = hexagram.poem[movingLine - 1];
-  poemLine.textContent = specificPoemLine || 'Silence is the answer.';
+  // The full poem with highlighting for the moving line
+  poemLine.innerHTML = '';
+  hexagram.poem.forEach((text, index) => {
+    const isMoving = (index + 1) === movingLine;
+    const lEl = document.createElement('div');
+    lEl.className = 'poem-line-item';
+    if (isMoving) lEl.classList.add('active');
+    lEl.textContent = text;
+    poemLine.appendChild(lEl);
+  });
 }
 
 // Event Listeners

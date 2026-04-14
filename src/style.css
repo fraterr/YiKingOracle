@@ -334,10 +334,28 @@ main {
 }
 
 .poem-line {
-  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.poem-line-item {
+  transition: all 0.3s ease;
+  padding: 2px 0;
+}
+
+.poem-line-item.active {
+  font-size: 1.4rem;
+  font-weight: 600;
   font-style: italic;
-  color: var(--text-primary);
-  text-align: center;
+  color: var(--accent-gold);
+  text-shadow: 0 0 10px var(--glow-color);
+  padding-left: 10px;
+  border-left: 3px solid var(--accent-gold);
 }
 
 .secondary-btn {
